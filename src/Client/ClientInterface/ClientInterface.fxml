@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="216.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ClientController.ClientInterfaceController">
+    <children>
+        <ListView fx:id="reservationListID" layoutX="14.0" layoutY="14.0" prefHeight="188.0" prefWidth="289.0" />
+      <MenuButton fx:id="menuButtonID" layoutX="325.0" layoutY="14.0" mnemonicParsing="false" text="Wybierz godzine">
+         <items>
+            <MenuItem fx:id="menuItem1" mnemonicParsing="false" onAction="#selectTime" text="10:00 - 11:00" />
+            <MenuItem fx:id="menuItem2" mnemonicParsing="false" onAction="#selectTime" text="11:00 - 12:00" />
+            <MenuItem fx:id="menuItem3" mnemonicParsing="false" onAction="#selectTime" text="12:00 - 13:00" />
+            <MenuItem fx:id="menuItem4" mnemonicParsing="false" onAction="#selectTime" text="13:00 - 14:00" />
+            <MenuItem fx:id="menuItem5" mnemonicParsing="false" onAction="#selectTime" text="14:00 - 15:00" />
+            <MenuItem fx:id="menuItem6" mnemonicParsing="false" onAction="#selectTime" text="15:00 - 16:00" />
+            <MenuItem fx:id="menuItem7" mnemonicParsing="false" onAction="#selectTime" text="16:00 - 17:00" />
+            <MenuItem fx:id="menuItem8" mnemonicParsing="false" onAction="#selectTime" text="17:00 - 18:00" />
+         </items></MenuButton>
+      <Button fx:id="reservationButtonID" layoutX="307.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#sendReservation" prefHeight="93.0" prefWidth="156.0" text="Rezerwuj">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textFieldNameID" alignment="CENTER" layoutX="311.0" layoutY="45.0" promptText="Podaj Imię" />
+      <TextField fx:id="textFieldLastnameID" alignment="CENTER" layoutX="311.0" layoutY="77.0" promptText="Podaj Nazwisko" />
+      <Button layoutX="474.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#deleteReservationID" prefHeight="93.0" prefWidth="156.0" text="Usuń rezerwacje">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ListView fx:id="reservationList2ID" layoutX="474.0" layoutY="9.0" prefHeight="93.0" prefWidth="156.0" />
+    </children>
+</AnchorPane>
